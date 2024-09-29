@@ -13,11 +13,11 @@
       <!-- Marqueur pour déclencher l'AR -->
       <a-marker preset="hiro">
         <!-- Cube 3D qui s'affiche sur le marqueur -->
-        <a-box position='0 0.5 0' scale="2 2 2" material='color: blue;'></a-box>
+        <a-box position='0 0.5 0' scale="5 5 5" material='color: blue;'></a-box>
       </a-marker>
 
-      <!-- Caméra avec champ de vision ajusté -->
-      <a-entity camera="fov: 20;"></a-entity>
+      <!-- Caméra avec champ de vision ajusté et position lointaine -->
+      <a-entity camera="near: 0.1; far: 1000;" position="0 0 10"></a-entity>
     </a-scene>
   </body>
 </html>
