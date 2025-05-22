@@ -1,23 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AR Test</title>
-    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
-    <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.7.2/aframe/build/aframe-ar.js"></script>
-  </head>
-  <body style="margin: 0; overflow: hidden;">
-    <!-- Scene AR.js -->
-    <a-scene embedded arjs="sourceType: webcam;">
-      <!-- Marqueur pour déclencher l'AR -->
-      <a-marker preset="hiro">
-        <!-- Cube 3D qui s'affiche sur le marqueur -->
-        <a-box position='0 0.5 0' scale="5 5 5" material='color: blue;'></a-box>
-      </a-marker>
-
-      <!-- Caméra avec champ de vision ajusté et position lointaine -->
-      <a-entity camera="near: 0.1; far: 1000;" position="0 0 10"></a-entity>
-    </a-scene>
-  </body>
+    <title>Simple App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Welcome to My Simple App</h1>
+    <p id="message">This is a simple application.</p>
+    <button id="myButton">Click Me!</button>
+    <script src="script.js"></script>
+</body>
 </html>
